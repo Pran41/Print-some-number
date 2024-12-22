@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Print some number</title>
+</head>
+<body class="body">
+    
+    <div id="content" class="content">
+        <h2>Printing some number using JS</h2>
+        <p id="demo"></p>
+        <script>
+            var i;
+            var text ="";
+            {
+                let i = 0
+                while (i < 10){
+                    text += "The values inside of the block: " + i + "<br>";
+                    i++;
+                }
+                {
+                    document.getElementById("demo").innerHTML = text;
+                }
+                document.write("The value of i outside is: " + i);
+            }
+        </script>
+    </div>
+
+</body>
+</html>
